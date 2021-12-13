@@ -17,7 +17,7 @@ RUN pip install mmcv-full -f https://download.openmmlab.com/mmcv/dist/cu101/torc
 
 RUN pip install mmdet==2.14.0
 
-CP ..
+COPY . .
 
 ENV FORCE_CUDA="1"
 RUN pip install -r requirements.txt

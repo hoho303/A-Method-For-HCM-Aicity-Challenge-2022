@@ -12,7 +12,7 @@ def readme():
     return content
 
 
-version_file = 'mmocr/version.py'
+version_file = 'version.py'
 is_windows = sys.platform == 'win32'
 
 
