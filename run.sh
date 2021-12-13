@@ -1,0 +1,11 @@
+python3 ./scripts/predict.py \
+        --test-input data/test_data/ \
+        --det-config ./asset/configs/detect.py \
+        --det-output ./asset/other/det_output/ \
+        --det-model ./asset/model/det.pth \
+        --threshold-det 0.6 \
+        --crop-path ./asset/other/crop/ \
+        --rec-config ./asset/configs/reg.py \
+        --rec-model ./asset/model/reg.pth \
+        --threshold-rec 0.8 \
+        --output data/submission_output/
