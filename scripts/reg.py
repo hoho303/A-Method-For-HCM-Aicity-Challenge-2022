@@ -14,8 +14,11 @@ import mmcv
 def clean(output_det_path,predicted_clean):
 
   files = [f for f in listdir(output_det_path) if isfile(join(output_det_path, f))]
-
+  print(len(files))
+  
   for f in files:
+    
+    print(output_det_path + f)
     content = ''
     t = open(output_det_path + f,'r')
     lines = t.readlines()

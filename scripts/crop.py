@@ -69,6 +69,7 @@ def crop2(image,x,name,dem,output_det_path,crop_path):
   #print(image)
   try:
     cv2.imwrite(crop_path + name + "_" + str(dem).zfill(5) + ".jpg", warped)
+    print(crop_path + name + "_" + str(dem).zfill(5) + ".jpg")
     return True
     #print("/content/vin_data/ramdisk/max/90kDICT32px/" + name[:-4] + '__' + str(dem) + '.png ')
   except:
